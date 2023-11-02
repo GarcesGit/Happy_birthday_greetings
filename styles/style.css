@@ -44,10 +44,12 @@ a{
 .menu__list{
     display: flex;
     gap: 20px;
+    padding-left: 0px;
 }
 
 ul{
     list-style-type: none; 
+    /* убрали маркеры в маркированном списке */
 }
 
 .menu__list-link{
@@ -55,7 +57,7 @@ ul{
 }
 
 .logo img {
-    width: 70px;
+    width: 60px;
     border-radius: 10px;
 }
 
@@ -78,19 +80,6 @@ ul{
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 footer{
     padding-top: 40px;
     padding-bottom: 35px;
@@ -98,7 +87,7 @@ footer{
 
 .footer__inner{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
 
 }
@@ -113,7 +102,6 @@ width: 230px;
 }
 
 .footer__social{
-    padding: 0px;
     display: flex;
     gap: 15px;
 }
@@ -139,13 +127,30 @@ width: 230px;
     }
 }
 
-@media (max-width: 768px){
-    .body{
+@media (max-width: 768px) {
+    body{
         font-size: 10px;
-    }
-
+  }
     .container{
         max-width: 640px;
     }
-    
+       .phone::before {
+        width: 14px;
+        height: 14px;
+        left: -16px;
+        top: -2px;
+        background-size: cover;
+    }
 }
+
+@media (max-width: 640px) {
+    .container{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .menu__list{
+        display: none;
+    }
+}
+
