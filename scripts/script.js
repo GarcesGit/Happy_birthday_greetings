@@ -69,21 +69,32 @@ const convertDate = (value) => {
     return date;
 }
 
+console.log(recordUserName(inputName.value));///////////////
+console.log(recordUserBirthday(inputBirthday.value));///////////////
+
+
 const setCountdown = (birthday) => {
     let today = new Date();
     let days = Math.floor((birthday - today)/86400000);
+console.log(days);///////////////
+
     timer.textContent = 'До дня рождения: ' + days + ' дней';
+    let text = timer.textContent;
+    let split = text.split(' ');
 
-    let timerId = setInterval(function() {
-        --days;
-        timer.textContent = 'До дня рождения: ' + days + ' дней';
+    if (!split.includes('NaN') ){
+        timer.classList.remove('hidden');
+        let timerId = setInterval(function() {
+            --days;
+            timer.textContent = 'До дня рождения: ' + days + ' дней';
 
-        if (days <= 0) {
-            clearInterval(timerId);
-            timer.textContent = '';
-            congratulateUser();
-        }
-    }, 86400000); 
+            if (days <= 0) {
+                clearInterval(timerId);
+                timer.textContent = '';
+                congratulateUser();
+            }
+        }, 10000); //86400000
+    }
 }
 setCountdown(convertDate(recordUserBirthday(inputBirthday.value)));
 
@@ -101,6 +112,6 @@ const congratulateUser = () => {
     });
 }
 
-// localStorage.clear();
+localStorage.clear();
 
 
