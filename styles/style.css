@@ -372,6 +372,48 @@ h2 {
     overflow: hidden;
 }
 
+.accordeon__item {
+    background-color: #FAFAFA;
+    margin-bottom: 10px;
+}
+
+.accordeon__title {
+    font-family: 'Yeseva One', serif;
+    font-size: 16px;
+    display: block;
+    width: 100%;
+    text-align: left;
+    border-color: transparent;
+    padding: 15px 60px 15px 15px;
+    background: none;
+    position: relative;
+}
+
+.accordeon__title::after {
+    content: '';
+    background-image: url(../images/vector.png);
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    right: 26px;
+    top: 16px;
+}
+
+.accordeon__text {
+    opacity: 0;
+    max-height: 0;
+    padding: 0px 60px 15px 15px;
+    transition: opacity .3s, max-height .3s;
+}
+
+.accordeon__text.accordeon__text--visible{
+    opacity: 1;
+}
+
+.accordeon__title--active.accordeon__title--active::after{
+    transform: rotate(180deg);
+}
+
 .swiper-pagination {
     margin-bottom: 70px;
 }
@@ -693,6 +735,10 @@ footer {
     .form {
         padding: 40px 20px 40px;
     }
+    .accordeon__title{
+        font-size: 12px;
+    }
+
 }
 
 @media (max-width: 580px) {
@@ -772,6 +818,9 @@ footer {
     }
 
     .form__input::placeholder {
+        font-size: 10px;
+    }
+    .accordeon__title{
         font-size: 10px;
     }
 }

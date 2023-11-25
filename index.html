@@ -1,267 +1,289 @@
 <!DOCTYPE html>
 <html lang="ru" dir="ltr">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Comfortaa&family=Yeseva+One&display=swap" rel="stylesheet">
-        <title>Happy_birthday</title>
-        <link href="styles/style.css" rel="stylesheet"/>
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
-        <link href="styles/style.css" rel="stylesheet"/>
-    </head>
-    <body>
-        <header class="header">
-            <div class="container header__inner">
-                <a href="#" class="logo">
-                    <img src="images/logo.png" alt="" class="logo__img">
-                </a>
-                <nav class="menu header__menu">
-                    <button class="menu__btn">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa&family=Yeseva+One&display=swap" rel="stylesheet">
+    <title>Happy_birthday</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link href="styles/style.css" rel="stylesheet" />
+</head>
+
+<body>
+    <header class="header">
+        <div class="container header__inner">
+            <a href="#" class="logo">
+                <img src="images/logo.png" alt="" class="logo__img">
+            </a>
+            <nav class="menu header__menu">
+                <button class="menu__btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="menu__list header__menu-list">
+                    <li class="menu__list-item"><a href="#" class="menu__list-link">про нас</a></li>
+                    <li class="menu__list-item"><a href="#" class="menu__list-link">каталог</a></li>
+                    <li class="menu__list-item"><a href="#" class="menu__list-link">товары</a></li>
+                    <li class="menu__list-item"><a href="#" class="menu__list-link">заказы</a></li>
+                    <li class="menu__list-item"><a href="#" class="menu__list-link">контакты</a></li>
+                </ul>
+            </nav>
+            <a href="tel:+79529124138" class="phone">+7 952 912 41 38</a>
+        </div>
+    </header>
+    <main class="main">
+        <section class="top">
+            <div class="container top__inner">
+                <p class="timer hidden"></p>
+                <div class="happy__birthday hidden">
+                    <p class="happy__text"></p>
+                </div>
+                <div class="top__content">
+                    <h2 class="title">
+                        Будет и на нашей улице праздник.
+                    </h2>
+                    <p class="top__text">
+                        Раньше улица представляла собой самостоятельную административную единицу, и у каждой улицы были
+                        свои праздники. <br /> Уличные праздники считались важными событиями, интересными и веселыми,
+                        поэтому каждый ждал праздника на своей улице.
+                    </p>
+                    <button class="buy">
+                        Купить
                     </button>
-                        <ul class="menu__list header__menu-list">
-                            <li class="menu__list-item"><a href="#" class="menu__list-link">про нас</a></li>
-                            <li class="menu__list-item"><a href="#" class="menu__list-link">каталог</a></li>
-                            <li class="menu__list-item"><a href="#" class="menu__list-link">товары</a></li>
-                            <li class="menu__list-item"><a href="#" class="menu__list-link">заказы</a></li>
-                            <li class="menu__list-item"><a href="#" class="menu__list-link">контакты</a></li>
-                        </ul>
-                </nav>
-                <a href="tel:+79529124138" class="phone">+7 952 912 41 38</a>
+                </div>
+                <picture class="top__img">
+                    <source srcset="images/top-s.png" media="(max-width: 360px)">
+                    <source srcset="images/top-m.png" media="(max-width: 480px)">
+                    <img class="top__img-l" src="images/top-l.png" alt="">
+                </picture>
             </div>
-        </header>
-        <main class="main">
-            <section class="top">
-                <div class="container top__inner">
-                    <p class="timer hidden"></p>
-                    <div class="happy__birthday hidden">
-                        <p class="happy__text"></p>
+        </section>
+        <section class="about">
+            <div class="container about__inner">
+                <div class="about__content">
+                    <h2 class="title">
+                        Про нас
+                    </h2>
+                    <p class="about__text">
+                        Плохому танцору яйца мешают. Так говорят про тех, кто плохо выполняет свою работу и при этом
+                        винит в своих неудачах обстоятельства, а не себя. 
+                    </p>
+                    Появление выражения, возможно, связано с «яичным танцем» (Eiertanz), который получил распространение
+                    в Германии в XVI веке. Танцующий должен был танцевать среди лежащих на полу яиц, не наступая на них.
+                    <p class="about__text">
+                    </p>
+                </div>
+                <ul class="about__list section--decor">
+                    <li class="about__item">
+                        <img src="images/about-1.jpg" alt="" class="about__item-img about__item-img-1">
+                        <p class="about__item-text">Наслаждайся моментом</p>
+                    </li>
+                    <li class="about__item">
+                        <img src="images/about-2.png" alt="" class="about__item-img about__item-img-2">
+                        <p class="about__item-text">Создайте любимую атмосферу</p>
+                    </li>
+                    <li class="about__item">
+                        <img src="images/about-3.jpg" alt="" class="about__item-img about__item-img-3">
+                        <p class="about__item-text">Сделаны с любовью</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="products section">
+            <div class="container section__inner">
+                <div class="products__description section__description">
+                    <h2 class="title">
+                        Наши товары
+                    </h2>
+                    <p class="products__text section__text">
+                        Выражение купить кота в мешке (приобрести что-либо, не видя и не зная качества покупаемого)
+                        восходит к Средним векам, когда мошенники старались продать в мешке кота вместо поросенка, зайца
+                        или кролика.
+                    </p>
+                </div>
+                <div class="products__content section__content-description section--decor">
+                    <div class="products__item">
+                        <img src="images/product-1.jpg" alt="" class="products__item-img">
+                        <p class="products__item-price">10$</p>
+                        <h4 class="products__item-title">"Сердечко любви"</h4>
+                        <p class="products__item-text">Запах: нежный аромат розы и ванили.
+                            Для чего: для атмосферы романтического настроения</p>
+                        <button class="buy">Купить</button>
                     </div>
-                    <div class="top__content">
-                        <h2 class="title">
-                            Будет и на нашей улице праздник.
-                        </h2>
-                        <p class="top__text">
-                            Раньше улица представляла собой самостоятельную административную единицу, и у каждой улицы были свои праздники. <br/> Уличные праздники считались важными событиями, интересными и веселыми, поэтому каждый ждал праздника на своей улице.
+                    <div class="products__item">
+                        <img src="images/product-2.jpg" alt="" class="products__item-img">
+                        <p class="products__item-price">20$</p>
+                        <h4 class="products__item-title">"Вихрь любви"</h4>
+                        <p class="products__item-text">Запах: нежный аромат лаванды.
+                            Для чего: для создания атмосферы уюта</p>
+                        <button class="buy">Купить</button>
+                    </div>
+                    <div class="products__item">
+                        <img src="images/product-3.jpg" alt="" class="products__item-img">
+                        <p class="products__item-price">10$</p>
+                        <h4 class="products__item-title">"Радуга"</h4>
+                        <p class="products__item-text">Запах: свежий аромат лайма.
+                            Для чего: для энергии и свежести в помещении.</p>
+                        <button class="buy">Купить</button>
+                    </div>
+                    <div class="products__item">
+                        <img src="images/product-4.jpg" alt="" class="products__item-img">
+                        <p class="products__item-price">10$</p>
+                        <h4 class="products__item-title">"Женское очарование"</h4>
+                        <p class="products__item-text">Запах: нежный аромат лаванды и фрезий. Для чего: для уюта и
+                            комфорта.</p>
+                        <button class="buy">Купить</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="steps section">
+            <div class="container section__inner">
+                <div class="steps__description section__description">
+                    <h2 class="title">
+                        Этапы создания свечей
+                    </h2>
+                    <p class="steps__text section__text">
+                        Создание свечи из соевого воска может состоять из следующих этапов:
+                    </p>
+                </div>
+                <ol class="steps__list section__content-description section--decor">
+                    <li class="steps__item steps__item--odd">
+                        <p class="steps__item-text">
+                            Подготовка материалов: мелкие фрагменты соевого воска, фитиль для свечи, ароматизаторы,
+                            красители и другие дополнительные материалы.
                         </p>
-                        <button class="buy">
-                            Купить
-                        </button>
-                    </div>
-                    <picture class="top__img">
-                        <source srcset="images/top-s.png" media="(max-width: 360px)">
-                        <source srcset="images/top-m.png" media="(max-width: 480px)">
-                        <img class="top__img-l" src="images/top-l.png" alt="">
-                    </picture>
-                </div>
-            </section>
-            <section class="about">
-                <div class="container about__inner">
-                    <div class="about__content">
-                        <h2 class="title">
-                            Про нас
-                        </h2>            
-                            <p class="about__text">
-                                Плохому танцору яйца мешают. Так говорят про тех, кто плохо выполняет свою работу и при этом винит в своих неудачах обстоятельства, а не себя. 
-                            </p>
-                                Появление выражения, возможно, связано с «яичным танцем» (Eiertanz), который получил распространение в Германии в XVI веке. Танцующий должен был танцевать среди лежащих на полу яиц, не наступая на них.                    <p class="about__text">
-                            </p>
-                    </div>
-                    <ul class="about__list section--decor">
-                        <li class="about__item">
-                            <img src="images/about-1.jpg" alt="" class="about__item-img about__item-img-1">
-                            <p class="about__item-text">Наслаждайся моментом</p>
-                        </li>
-                        <li class="about__item">
-                            <img src="images/about-2.png" alt="" class="about__item-img about__item-img-2">
-                            <p class="about__item-text">Создайте любимую атмосферу</p>
-                        </li>
-                        <li class="about__item">
-                            <img src="images/about-3.jpg" alt="" class="about__item-img about__item-img-3">
-                            <p class="about__item-text">Сделаны с любовью</p>
-                        </li>
-                    </ul>
-                </div>
-            </section>
-            <section class="products section">
-                <div class="container section__inner">
-                    <div class="products__description section__description">
-                        <h2 class="title">
-                            Наши товары
-                        </h2>
-                        <p class="products__text section__text">
-                            Выражение купить кота в мешке (приобрести что-либо, не видя и не зная качества покупаемого) восходит к Средним векам, когда мошенники старались продать в мешке кота вместо поросенка, зайца или кролика.
+                        <img src="images/steps-1.jpg" alt="" class="steps__item-img">
+                    </li>
+                    <li class="steps__item steps__item--odd">
+                        <p class="steps__item-text">
+                            Подготовка формы: выбор формы для свечи и подготовка ее к наполнению воском.
                         </p>
-                    </div>
-                    <div class="products__content section__content-description section--decor">
-                        <div class="products__item">
-                            <img src="images/product-1.jpg" alt="" class="products__item-img">
-                            <p class="products__item-price">10$</p>
-                            <h4 class="products__item-title">"Сердечко любви"</h4>
-                            <p class="products__item-text">Запах: нежный аромат розы и ванили. 
-                                Для чего: для атмосферы романтического настроения</p>
-                            <button class="buy">Купить</button>
-                        </div>
-                        <div class="products__item">
-                            <img src="images/product-2.jpg" alt="" class="products__item-img">
-                            <p class="products__item-price">20$</p>
-                            <h4 class="products__item-title">"Вихрь любви"</h4>
-                            <p class="products__item-text">Запах: нежный аромат лаванды. 
-                                Для чего: для создания атмосферы уюта</p>
-                            <button class="buy">Купить</button>
-                        </div>
-                        <div class="products__item">
-                            <img src="images/product-3.jpg" alt="" class="products__item-img">
-                            <p class="products__item-price">10$</p>
-                            <h4 class="products__item-title">"Радуга"</h4>
-                            <p class="products__item-text">Запах: свежий аромат лайма. 
-                                Для чего: для энергии и свежести в помещении.</p>
-                            <button class="buy">Купить</button>
-                        </div>
-                        <div class="products__item">
-                            <img src="images/product-4.jpg" alt="" class="products__item-img">
-                            <p class="products__item-price">10$</p>
-                            <h4 class="products__item-title">"Женское очарование"</h4>
-                            <p class="products__item-text">Запах: нежный аромат лаванды и фрезий. Для чего: для уюта и комфорта.</p>
-                            <button class="buy">Купить</button>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section class="steps section">
-                <div class="container section__inner">
-                    <div class="steps__description section__description">
-                        <h2 class="title">
-                            Этапы создания свечей
-                        </h2>
-                        <p class="steps__text section__text">
-                            Создание свечи из соевого воска может состоять из следующих этапов:
+                        <img src="images/steps-2.jpg" alt="" class="steps__item-img">
+                    </li>
+                    <li class="steps__item steps__item--even">
+                        <img src="images/steps-3.jpg" alt="" class="steps__item-img">
+                        <p class="steps__item-text">
+                            Приготовление воска: расплавление соевого воска в правильном устройстве до нужной
+                            температуры. Добавление ароматизаторов и красителей по мере необходимости.
                         </p>
-                    </div>
-                    <ol class="steps__list section__content-description section--decor">
-                        <li class="steps__item steps__item--odd">
-                            <p class="steps__item-text">
-                                Подготовка материалов: мелкие фрагменты соевого воска, фитиль для свечи, ароматизаторы, красители и другие дополнительные материалы.
-                            </p>
-                            <img src="images/steps-1.jpg" alt="" class="steps__item-img">
-                        </li>
-                        <li class="steps__item steps__item--odd">
-                            <p class="steps__item-text">
-                                Подготовка формы: выбор формы для свечи и подготовка ее к наполнению воском.
-                            </p>
-                            <img src="images/steps-2.jpg" alt="" class="steps__item-img">
-                        </li>
-                        <li class="steps__item steps__item--even">
-                            <img src="images/steps-3.jpg" alt="" class="steps__item-img">
-                            <p class="steps__item-text">
-                                Приготовление воска: расплавление соевого воска в правильном устройстве до нужной температуры. Добавление ароматизаторов и красителей по мере необходимости.
-                            </p>
-                        </li>
-                        <li class="steps__item steps__item--even">
-                            <img src="images/steps-4.jpg" alt="" class="steps__item-img">
-                            <p class="steps__item-text">
-                                Подготовка фитиля: вставьте фитиль в форму и зафиксируйте его так, чтобы он был равномерно напряжен.
-                            </p>
-                        </li>
-                        <li class="steps__item steps__item--odd">
-                            <p class="steps__item-text">Приготовление воска: расплавление соевого воска в правильном устройстве до нужной температуры. Добавление ароматизаторов и красителей по мере необходимости.
-                            </p>
-                            <img src="images/steps-5.jpg" alt="" class="steps__item-img">
-                        </li>
-                        <li class="steps__item steps__item--odd">
-                            <p class="steps__item-text">
-                                Подготовка материалов: мелкие фрагменты соевого воска, фитиль для свечи, ароматизаторы, красители и другие дополнительные материалы.
-                            </p>
-                            <img src="images/steps-6.jpg" alt="" class="steps__item-img">
-                        </li>
-                        <li class="steps__item steps__item--even">
-                            <img src="images/steps-7.jpg" alt="" class="steps__item-img">
-                            <p class="steps__item-text">
-                                Наполнение формы: воск налить до формы, пока она не заполнится полностью. Ждать, пока он затвердеет.
-                            </p>
-                        </li>
-                        <li class="steps__item steps__item--even">
-                            <img src="images/steps-8.jpg" alt="" class="steps__item-img">
-                            <p class="steps__item-text">
-                                Приготовление воска: расплавление соевого воска в правильном устройстве до нужной температуры. Добавление ароматизаторов и красителей по мере необходимости.
-                            </p>
-                        </li>
-                        <li class="steps__item steps__item--odd">
-                            <p class="steps__item-text">
-                                Подготовка материалов: мелкие фрагменты соевого воска, фитиль для свечи, ароматизаторы, красители и другие дополнительные материалы.
-                            </p>
-                            <img src="images/steps-9.jpg" alt="" class="steps__item-img">
-                        </li>
-                        <li class="steps__item steps__item--odd">
-                            <p class="steps__item-text">
-                                Наполнение формы: воск налить до формы, пока она не заполнится полностью. Ждать, пока он затвердеет.
-                            </p>
-                            <img src="images/steps-10.jpg" alt="" class="steps__item-img">
-                        </li>
-                    </ol> 
-                </div>
-            </section>
-            <section class="team section">
-                <div class="container section__inner">
-                    <div class="section__description">
-                        <h2 class="title">
-                            Наша команда
-                        </h2>
-                        <p class="section__text">
-                            В некоторых источниках упоминается глава банды – молодой ирландец Патрик Хулиган: он работал вышибалой, а в свободное время вместе с братьями грабил и избивал людей на улицах.
+                    </li>
+                    <li class="steps__item steps__item--even">
+                        <img src="images/steps-4.jpg" alt="" class="steps__item-img">
+                        <p class="steps__item-text">
+                            Подготовка фитиля: вставьте фитиль в форму и зафиксируйте его так, чтобы он был равномерно
+                            напряжен.
                         </p>
+                    </li>
+                    <li class="steps__item steps__item--odd">
+                        <p class="steps__item-text">Приготовление воска: расплавление соевого воска в правильном
+                            устройстве до нужной температуры. Добавление ароматизаторов и красителей по мере
+                            необходимости.
+                        </p>
+                        <img src="images/steps-5.jpg" alt="" class="steps__item-img">
+                    </li>
+                    <li class="steps__item steps__item--odd">
+                        <p class="steps__item-text">
+                            Подготовка материалов: мелкие фрагменты соевого воска, фитиль для свечи, ароматизаторы,
+                            красители и другие дополнительные материалы.
+                        </p>
+                        <img src="images/steps-6.jpg" alt="" class="steps__item-img">
+                    </li>
+                    <li class="steps__item steps__item--even">
+                        <img src="images/steps-7.jpg" alt="" class="steps__item-img">
+                        <p class="steps__item-text">
+                            Наполнение формы: воск налить до формы, пока она не заполнится полностью. Ждать, пока он
+                            затвердеет.
+                        </p>
+                    </li>
+                    <li class="steps__item steps__item--even">
+                        <img src="images/steps-8.jpg" alt="" class="steps__item-img">
+                        <p class="steps__item-text">
+                            Приготовление воска: расплавление соевого воска в правильном устройстве до нужной
+                            температуры. Добавление ароматизаторов и красителей по мере необходимости.
+                        </p>
+                    </li>
+                    <li class="steps__item steps__item--odd">
+                        <p class="steps__item-text">
+                            Подготовка материалов: мелкие фрагменты соевого воска, фитиль для свечи, ароматизаторы,
+                            красители и другие дополнительные материалы.
+                        </p>
+                        <img src="images/steps-9.jpg" alt="" class="steps__item-img">
+                    </li>
+                    <li class="steps__item steps__item--odd">
+                        <p class="steps__item-text">
+                            Наполнение формы: воск налить до формы, пока она не заполнится полностью. Ждать, пока он
+                            затвердеет.
+                        </p>
+                        <img src="images/steps-10.jpg" alt="" class="steps__item-img">
+                    </li>
+                </ol>
+            </div>
+        </section>
+        <section class="team section">
+            <div class="container section__inner">
+                <div class="section__description">
+                    <h2 class="title">
+                        Наша команда
+                    </h2>
+                    <p class="section__text">
+                        В некоторых источниках упоминается глава банды – молодой ирландец Патрик Хулиган: он работал
+                        вышибалой, а в свободное время вместе с братьями грабил и избивал людей на улицах.
+                    </p>
+                </div>
+                <div class="team__content section__content-description">
+                    <div class="team__item">
+                        <img src="images/team-1.jpg" alt="" class="team__img">
+                        <div class="team__item-box">
+                            <p class="team__item-name">Преподаватель Анна</p>
+                            <p class="team__item-description">Обучает сфере дизайна и декорирования</p>
+                        </div>
                     </div>
-                    <div class="team__content section__content-description">
-                        <div class="team__item">
-                            <img src="images/team-1.jpg" alt="" class="team__img">
-                            <div class="team__item-box">
-                                <p class="team__item-name">Преподаватель Анна</p>
-                                <p class="team__item-description">Обучает сфере дизайна и декорирования</p>
-                            </div>
+                    <div class="team__item">
+                        <img src="images/team-2.jpg" alt="" class="team__img">
+                        <div class="team__item-box">
+                            <p class="team__item-name">Преподаватель Анна</p>
+                            <p class="team__item-description">Обучает сфере дизайна и декорирования</p>
                         </div>
-                        <div class="team__item">
-                            <img src="images/team-2.jpg" alt="" class="team__img">
-                            <div class="team__item-box">
-                                <p class="team__item-name">Преподаватель Анна</p>
-                                <p class="team__item-description">Обучает сфере дизайна и декорирования</p>
-                            </div>
+                    </div>
+                    <div class="team__item">
+                        <img src="images/team-3.jpg" alt="" class="team__img">
+                        <div class="team__item-box">
+                            <p class="team__item-name">Преподаватель Анна</p>
+                            <p class="team__item-description">Обучает сфере дизайна и декорирования</p>
                         </div>
-                        <div class="team__item">
-                            <img src="images/team-3.jpg" alt="" class="team__img">
-                            <div class="team__item-box">
-                                <p class="team__item-name">Преподаватель Анна</p>
-                                <p class="team__item-description">Обучает сфере дизайна и декорирования</p>
-                            </div>
-                        </div>
-                        <div class="team__item">
-                            <img src="images/team-4.jpg" alt="" class="team__img">
-                            <div class="team__item-box">
-                                <p class="team__item-name">Преподаватель Анна</p>
-                                <p class="team__item-description">Обучает сфере дизайна и декорирования</p>
-                            </div>
+                    </div>
+                    <div class="team__item">
+                        <img src="images/team-4.jpg" alt="" class="team__img">
+                        <div class="team__item-box">
+                            <p class="team__item-name">Преподаватель Анна</p>
+                            <p class="team__item-description">Обучает сфере дизайна и декорирования</p>
                         </div>
                     </div>
                 </div>
-            </section>
-            <section class="feedback section">
-                <div class="container feedback__inner section__inner">
-                    <div class="section__description">
-                        <h2 class="title">
-                            Отзывы от клиентов
-                        </h2>
-                        <p class="section__text">
-                            Наши покупатели имеют разный возраст, статус, занятия и интересы, но у них есть одна общая черта - они стремятся к гармонии и находят радость в маленьких радостях жизни, которые создают атмосферу уюта и гармонии в их доме.                </p>
-                    </div>
-                    <div class="feedback__content section--decor">
-                        <div class="feedback__slider">
-                            <div class="swiper-wrapper">
+            </div>
+        </section>
+        <section class="feedback section">
+            <div class="container feedback__inner section__inner section">
+                <div class="section__description">
+                    <h2 class="title">
+                        Отзывы от клиентов
+                    </h2>
+                    <p class="section__text">
+                        Наши покупатели имеют разный возраст, статус, занятия и интересы, но у них есть одна общая черта
+                        - они стремятся к гармонии и находят радость в маленьких радостях жизни, которые создают
+                        атмосферу уюта и гармонии в их доме. </p>
+                </div>
+                <div class="feedback__content section--decor">
+                    <div class="feedback__slider">
+                        <div class="swiper-wrapper">
                             <div class="swiper-slide">
                                 <div class="feedback__item">
                                     <div class="feedback__item-photo">
@@ -272,7 +294,11 @@
                                             <img src="images/instagram.svg" alt="">
                                         </a>
                                         <p class="feedback__item-name">Иван Пилипенко</p>
-                                        <p class="feedback__item-text">Классический (лат. classicus – образцовый). Показательный; великолепный, первоклассный; правильный; древний (античный); устоявшийся, проверенный временем; характерный, типичный. В широком смысле классика – это высокий стандарт в какой-либо области деятельности, выработанный в течение длительного времени, как правило, веками.</p>
+                                        <p class="feedback__item-text">Классический (лат. classicus – образцовый).
+                                            Показательный; великолепный, первоклассный; правильный; древний (античный);
+                                            устоявшийся, проверенный временем; характерный, типичный. В широком смысле
+                                            классика – это высокий стандарт в какой-либо области деятельности,
+                                            выработанный в течение длительного времени, как правило, веками.</p>
                                         <button class="buy">Купить этот товар</button>
                                     </div>
                                 </div>
@@ -287,7 +313,11 @@
                                             <img src="images/instagram.svg" alt="">
                                         </a>
                                         <p class="feedback__item-name">Иван Пилипенко</p>
-                                        <p class="feedback__item-text">Классический (лат. classicus – образцовый). Показательный; великолепный, первоклассный; правильный; древний (античный); устоявшийся, проверенный временем; характерный, типичный. В широком смысле классика – это высокий стандарт в какой-либо области деятельности, выработанный в течение длительного времени, как правило, веками.</p>
+                                        <p class="feedback__item-text">Классический (лат. classicus – образцовый).
+                                            Показательный; великолепный, первоклассный; правильный; древний (античный);
+                                            устоявшийся, проверенный временем; характерный, типичный. В широком смысле
+                                            классика – это высокий стандарт в какой-либо области деятельности,
+                                            выработанный в течение длительного времени, как правило, веками.</p>
                                         <button class="buy">Купить этот товар</button>
                                     </div>
                                 </div>
@@ -302,7 +332,11 @@
                                             <img src="images/instagram.svg" alt="">
                                         </a>
                                         <p class="feedback__item-name">Иван Пилипенко</p>
-                                        <p class="feedback__item-text">Классический (лат. classicus – образцовый). Показательный; великолепный, первоклассный; правильный; древний (античный); устоявшийся, проверенный временем; характерный, типичный. В широком смысле классика – это высокий стандарт в какой-либо области деятельности, выработанный в течение длительного времени, как правило, веками.</p>
+                                        <p class="feedback__item-text">Классический (лат. classicus – образцовый).
+                                            Показательный; великолепный, первоклассный; правильный; древний (античный);
+                                            устоявшийся, проверенный временем; характерный, типичный. В широком смысле
+                                            классика – это высокий стандарт в какой-либо области деятельности,
+                                            выработанный в течение длительного времени, как правило, веками.</p>
                                         <button class="buy">Купить этот товар</button>
                                     </div>
                                 </div>
@@ -317,77 +351,134 @@
                                             <img src="images/instagram.svg" alt="">
                                         </a>
                                         <p class="feedback__item-name">Иван Пилипенко</p>
-                                        <p class="feedback__item-text">Классический (лат. classicus – образцовый). Показательный; великолепный, первоклассный; правильный; древний (античный); устоявшийся, проверенный временем; характерный, типичный. В широком смысле классика – это высокий стандарт в какой-либо области деятельности, выработанный в течение длительного времени, как правило, веками.</p>
+                                        <p class="feedback__item-text">Классический (лат. classicus – образцовый).
+                                            Показательный; великолепный, первоклассный; правильный; древний (античный);
+                                            устоявшийся, проверенный временем; характерный, типичный. В широком смысле
+                                            классика – это высокий стандарт в какой-либо области деятельности,
+                                            выработанный в течение длительного времени, как правило, веками.</p>
                                         <button class="buy">Купить этот товар</button>
                                     </div>
                                 </div>
                             </div>
-                            </div>
-                            <div class="swiper-pagination">
-                            </div>
-                        </div>            
+                        </div>
+                        <div class="swiper-pagination">
+                        </div>
                     </div>
                 </div>
-            </section>
-            <div class="contacts">
-                <div class="container container__inner">
-                    <form action="" class="form">
-                        <h2 class="title">
-                            Подпишитесь на наши акции
-                        </h2>
-                        <input type="text" class="form__input input__name" placeholder="Ваше имя">
-                        <input type="text" class="form__input input__birthday" placeholder="Дата рождения дд.мм.гггг">
-                        <input type="email" class="form__input" placeholder="E-mail">
-                        <button type="submit" class="buy submit__btn">Отправить</button>
+            </div>
+            <div class="container section__inner">
+                <div class="section__description">
+                    <h2 class="title">
+                        Частые вопросы
+                    </h2>
+                </div>
+                <div class="questions__content section__content-description section--decor">
+                    <div class="accordeon">
+                        <div class="accordeon__item">
+                            <button class="accordeon__title">
+                                Аутодафе́ (исп. auto de fe – акт веры)?
+                            </button>
+                            <p class="accordeon__text">
+                                Публичное наказание кого-либо; уничтожение чего-либо, как правило, путем сожжения. Свои
+                                письма он подверг аутодафе. Так в Средние века в Испании и Португалии называли
+                                торжественную религиозную церемонию, устраиваемую инквизицией
+                            </p>
+                        </div>
+                        <div class="accordeon__item">
+                            <button class="accordeon__title">
+                                Оксю́морон (или окси́морон) (греч. oxymoron – острая тупость)?
+                            </button>
+                            <p class="accordeon__text">
+                                Что-то противоречивое; сочетание несочетаемого, как правило, взаимоисключающих
+                                противоположностей. Само слово «оксюморон» тоже можно назвать оксюмороном, так как оно
+                                образовано от противоположных по смыслу слов («проницательный» и «тупой»).
+                            </p>
+                        </div>
+                        <div class="accordeon__item">
+                            <button class="accordeon__title">
+                                Харакири (яп. харакири, или сэппуку – вспарывание живота)?
+                            </button>
+                            <p class="accordeon__text">
+                                Ритуальное самоубийство, принятое среди самурайского сословия средневековой Японии,
+                                которое совершалось либо по приговору, как наказание, либо добровольно, когда была
+                                затронута честь самурая.
+                            </p>
+                        </div>
+                        <div class="accordeon__item">
+                            <button class="accordeon__title">
+                                Жупел. Нечто внушающее страх и отвращение; пугало?
+                            </button>
+                            <p class="accordeon__text">
+                                Термин в переводе со старославянского означает горящая сера (смола). Часто упоминается в
+                                Ветхом Завете, например, в Первой книге Бытия (гл. 19, ст. 4): «И пролил Господь на
+                                Содом и Гоморру дождем серу и огонь с неба»
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-                    </form>
-                    <img src="images/contacts.png" alt="" class="contacts__img">
-                </div>
+        </section>
+        <div class="contacts">
+            <div class="container container__inner">
+                <form action="" class="form">
+                    <h2 class="title">
+                        Подпишитесь на наши акции
+                    </h2>
+                    <input type="text" class="form__input input__name" placeholder="Ваше имя">
+                    <input type="text" class="form__input input__birthday" placeholder="Дата рождения дд.мм.гггг">
+                    <input type="email" class="form__input" placeholder="E-mail">
+                    <button type="submit" class="buy submit__btn">Отправить</button>
+
+                </form>
+                <img src="images/contacts.png" alt="" class="contacts__img">
             </div>
-        </main>
-        <footer class="footer">
-            <div class="container footer__inner">
-                <a href="#" class="logo">
-                    <img src="images/logo.png" alt="" class="logo__img">
-                </a>
-                <nav class="menu footer__menu">
-                    <ul class="menu__list footer__menu-list">
-                        <li class="menu__list-item"><a href="#" class="menu__list-link">главная</a></li>
-                        <li class="menu__list-item"><a href="#" class="menu__list-link">компания</a></li>
-                        <li class="menu__list-item"><a href="#" class="menu__list-link">каталог</a></li>
-                        <li class="menu__list-item"><a href="#" class="menu__list-link">заказы</a></li>
-                        <li class="menu__list-item"><a href="#" class="menu__list-link">контакты</a></li>
-                    </ul>
-                </nav>
-                <div class="footer__contacts">
-                    <a href="tel:+79529124138" class="footer__phone">+7 952 912 41 38</a>
-                    <a href="mailto:koshukovanat@gmail.com" class="email">koshukovanat@gmail.com</a>
-                    <ul class="footer__social">
-                        <li class="footer__social-item">
-                            <a href="#" class="footer__social-link">
-                                <img src="images/facebook.svg" alt="" class="footer__social-img"></img>
-                            </a>
-                        </li>
-                        <li class="footer__social-item">
-                            <a href="#" class="footer__social-link">
-                                <img src="images/instagram.svg" alt="" class="footer__social-img"></img>
-                            </a>
-                        </li>
-                        <li class="footer__social-item">
-                            <a href="#" class="footer__social-link">
-                                <img src="images/linkedin.svg" alt="" class="footer__social-img"></img>
-                            </a>
-                        </li>
-                        <li class="footer__social-item">
-                            <a href="#" class="footer__social-link">
-                                <img src="images/youtube.svg" alt="" class="footer__social-img"></img>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="container footer__inner">
+            <a href="#" class="logo">
+                <img src="images/logo.png" alt="" class="logo__img">
+            </a>
+            <nav class="menu footer__menu">
+                <ul class="menu__list footer__menu-list">
+                    <li class="menu__list-item"><a href="#" class="menu__list-link">главная</a></li>
+                    <li class="menu__list-item"><a href="#" class="menu__list-link">компания</a></li>
+                    <li class="menu__list-item"><a href="#" class="menu__list-link">каталог</a></li>
+                    <li class="menu__list-item"><a href="#" class="menu__list-link">заказы</a></li>
+                    <li class="menu__list-item"><a href="#" class="menu__list-link">контакты</a></li>
+                </ul>
+            </nav>
+            <div class="footer__contacts">
+                <a href="tel:+79529124138" class="footer__phone">+7 952 912 41 38</a>
+                <a href="mailto:koshukovanat@gmail.com" class="email">koshukovanat@gmail.com</a>
+                <ul class="footer__social">
+                    <li class="footer__social-item">
+                        <a href="#" class="footer__social-link">
+                            <img src="images/facebook.svg" alt="" class="footer__social-img"></img>
+                        </a>
+                    </li>
+                    <li class="footer__social-item">
+                        <a href="#" class="footer__social-link">
+                            <img src="images/instagram.svg" alt="" class="footer__social-img"></img>
+                        </a>
+                    </li>
+                    <li class="footer__social-item">
+                        <a href="#" class="footer__social-link">
+                            <img src="images/linkedin.svg" alt="" class="footer__social-img"></img>
+                        </a>
+                    </li>
+                    <li class="footer__social-item">
+                        <a href="#" class="footer__social-link">
+                            <img src="images/youtube.svg" alt="" class="footer__social-img"></img>
+                        </a>
+                    </li>
+                </ul>
             </div>
-        </footer>
-        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-        <script src="scripts/script.js"></script>
-    </body>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="scripts/script.js"></script>
+</body>
+
 </html>
